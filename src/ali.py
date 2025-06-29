@@ -16,7 +16,6 @@ DB_NAME = "aliyun"  # 要操作的数据库
 
 hosts_str = ",".join(HOSTS)
 uri = f"mongodb://{hosts_str}/?replicaSet={REPLICA_SET}"
-
 mymongo = MyMongoClient(uri, DB_NAME)
 
 
